@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+}
+
+.profile:hover{
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.skill:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card{
+    border-radius: 10px;
+}
+
+.task{
+    height: 150px;
+    width: 150px;
+    line-height: 110px;
+    border: 20px solid white;
+    border-radius: 100px;
+    border-color: white white rgb(90, 238, 21) rgb(90, 238, 21);
+}
+
+.buttom{
+    height: 400px;
+    width: auto;
+}
+
+.github{
+    font-weight: bold;
+    font-size: 7mm;
+    color: grey;
+    text-decoration-line: none;
+}
+
+.proj_img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.browser{
+    height: 30px;
+    width: 30px;
+}
