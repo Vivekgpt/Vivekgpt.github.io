@@ -31,7 +31,7 @@ body{
 }
 
 .buttom{
-    height: 400px;
+    height: auto;
     width: auto;
 }
 
@@ -52,4 +52,17 @@ body{
 .browser{
     height: 30px;
     width: 30px;
+}
+
+.gitlogo{
+    height: 25px;
+    width: 25px;
+}
+
+.tasktexthead{
+    font-size: 200%;
+}
+
+.tasktextcont{
+    font-size: 100%;
 }
