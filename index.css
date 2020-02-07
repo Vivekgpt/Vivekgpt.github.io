@@ -35,15 +35,22 @@ body{
 .task{
     height: 150px;
     width: 150px;
-    line-height: 110px;
-    border: 20px solid white;
-    border-radius: 100px;
+    border: 20px solid;
+    border-radius: 50%;
     border-color: white white rgb(90, 238, 21) rgb(90, 238, 21);
+    animation: spin 10s infinite linear;
 }
 
-.task:hover{
-    transform: scale(1.2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.tasktext{
+    line-height: 110px;
+    animation: spin 10s infinite reverse linear;
+}
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
 }
 
 .buttom{
@@ -127,18 +134,18 @@ body{
     position: relative;
     width: 12%;
     /* border: 1px solid; */
-  }
+}
   
-  .image {
+.image {
     opacity: 1;
     display: block;
     width: 100%;
     height: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
+}
   
-  .middle {
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -146,37 +153,37 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
   
-  .container:hover .image {
+.container:hover .image {
     opacity: 0.1;
-  }
+}
   
-  .container:hover .middle {
+.container:hover .middle {
     opacity: 1;
-  }
+}
   
-  .text {
+.text {
     color: black;
     font-size: 150%;
     font-weight: bold;
     padding: 16px 32px;
-  }
+}
 
 
 .containerprof {
     position: relative;
     width: 30%;
     /* border: 1px solid; */
-  }
+}
   
-  .imageprof {
+.imageprof {
     display: block;
     width: 100%;
     height: auto;
-  }
+}
   
-  .overlay {
+.overlay {
     position: absolute;
     bottom: 100%;
     background-color: rgb(131, 17, 106);
@@ -184,14 +191,14 @@ body{
     width: 100%;
     height:0;
     transition: .5s ease;
-  }
+}
   
-  .containerprof:hover .overlay {
+.containerprof:hover .overlay {
     bottom: 0;
     height: 100%;
-  }
+}
   
-  .textprof {
+.textprof {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -199,24 +206,24 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
-  @keyframes message{
+@keyframes message{
     from, to, 65% {transform: translate(-50%, 0)}
     25% {transform: translate(-50%, 60px)}
     26% {transform: translate(-50%, -60px)}
   
-  }
+}
   
-  .profbox, .projbox {
+.profbox, .projbox {
     position: relative;
     overflow:hidden;
     width: 300px;
     height: 60px;
     margin: auto;
-  }
+}
   
-  .proftext, .projtext {
+.proftext, .projtext {
     margin: 12px 0;
     left: 50%;
     transform: translateX(-50%);
@@ -224,6 +231,8 @@ body{
     position: absolute;
     top: 0px;
     animation: message 2s cubic-bezier(0.645,.045,.355,1) infinite;
-  }
+}
   
-  
+.gitcalbox{
+      border: 1px solid;
+}
