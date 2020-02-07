@@ -1,6 +1,17 @@
 body{
     text-align: center;
 }
+.name{
+    white-space: nowrap;
+    font-weight: bold;
+    overflow: hidden;
+    width: 100%;
+    animation: type 5s steps(60); 
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  }
 
 .profile:hover{
     transform: scale(1);
@@ -189,3 +200,30 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  @keyframes message{
+    from, to, 65% {transform: translate(-50%, 0)}
+    25% {transform: translate(-50%, 60px)}
+    26% {transform: translate(-50%, -60px)}
+  
+  }
+  
+  .profbox, .projbox {
+    position: relative;
+    overflow:hidden;
+    width: 300px;
+    height: 60px;
+    margin: auto;
+  }
+  
+  .proftext, .projtext {
+    margin: 12px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    animation: message 2s cubic-bezier(0.645,.045,.355,1) infinite;
+  }
+  
+  
