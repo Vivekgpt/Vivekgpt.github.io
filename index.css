@@ -243,24 +243,30 @@ body{
   
 }
   
-.profbox, .projbox {
-    position: relative;
-    overflow:hidden;
-    width: 300px;
-    height: 60px;
-    margin: auto;
-}
-  
-.proftext, .projtext {
-    margin: 12px 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bold;
-    position: absolute;
-    top: 0px;
-    animation: message 2s cubic-bezier(0.645,.045,.355,1) infinite;
-}
-  
 .gitcalbox{
       border: 1px solid;
 }
+
+
+.shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #11ec0a;
+    border-bottom: 6px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+  .projtext, .proftext {
+    font-family: 'Bitter', serif;
+    line-height: 32px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    top: -48px;
+    position: relative;
+  }
+  .textbox:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
