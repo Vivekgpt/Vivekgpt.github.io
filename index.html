@@ -8,15 +8,28 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/github-calendar@1.3.1/dist/github-calendar.min.js"></script>
   <title>Document</title>
 </head>
 
 <body class="text-center container-fluid">
-  <div class="mt-5">
-    <img style="height: 15%; width: 15%; border: 10px solid rgb(220, 220, 224);" class="rounded-circle profile"
-      src="logos/ProfilePhoto.jpg">
+  <div class="mt-5 circle">
+    <!-- <img src="logos/ProfilePhoto.jpg" class="rounded-circle img"> -->
+    <figure class="chart" data-percent="100">
+      <svg width="200" height="200">
+        <circle class="outer" cx="95" cy="95" r="90" transform="rotate(0, 95, 95)"/>  
+        <defs>
+                <pattern id="image-4" x="0%" y="0%" height="100%" width="100%"
+                 viewBox="0 0 150 150">
+                  <image x="0%" y="0%" width="150" height="150" xlink:href="logos/ProfilePhoto.jpg"></image>
+                </pattern>
+              </defs>
+      </svg>
+    </figure>
   </div>
+
+
   <h2 class="mt-4 name">Vivek Kumar</h2>
   <p>Front-End Developer</p>
   <div>
@@ -135,7 +148,7 @@
 
 
       <div class="containerprof m-3">
-        <img src="logos/front-end-developer.png" alt="Avatar" class="imageprof">
+        <img src="logos/front-end-developer.png" alt="..." class="imageprof">
         <div class="overlay">
           <div class="textprof">Front-End-Developer</div>
         </div>

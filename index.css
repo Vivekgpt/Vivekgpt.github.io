@@ -1,8 +1,36 @@
 body{
     text-align: center;
 }
+
+.outer {
+    fill: url(#image-4);
+    stroke: rgb(192, 187, 187);
+    stroke-width: 10;
+    stroke-dasharray: 600;
+    transition: stroke-dashoffset 1s;
+  }
+  
+  .chart:hover .outer {
+      stroke-dashoffset: 600 !important;
+  }
+  
+  .chart[data-percent='100'] .outer {
+    animation: show100 7s;
+  }
+  
+  @keyframes show100 {
+    from {
+      stroke-dashoffset: 595;
+    }
+    
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
 .name{
     white-space: nowrap;
+    font-family: 'Bitter', serif;
     font-weight: bold;
     overflow: hidden;
     width: 100%;
