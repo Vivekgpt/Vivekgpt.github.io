@@ -270,3 +270,7 @@ body{
     stroke-dashoffset: 0;
     stroke-dasharray: 760;
   }
+
+  #atag {
+      text-decoration: none;
+  }
