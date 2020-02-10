@@ -67,6 +67,62 @@ body{
     border-radius: 50%;
     border-color: white white rgb(90, 238, 21) rgb(90, 238, 21);
     animation: spin 10s infinite linear;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.tasktexthead{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.tasktextcont{
+    font-size: 100%;
+}
+
+@media (max-width: 480px) {
+    .task {
+        height: 85px;
+        width: 85px;
+        border: 10px solid;
+        border-color: white white rgb(90, 238, 21) rgb(90, 238, 21);
+        font-size: 20px;
+    }
+
+    /* .tasktext{
+        margin-top: -22px;
+    } */
+
+    .tasktexthead{
+        font-size: 80%;
+    }
+    
+    .tasktextcont{
+        font-size: 50%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 720px) {
+    .task {
+        height: 85px;
+        width: 85px;
+        border: 10px solid;
+        border-color: white white rgb(90, 238, 21) rgb(90, 238, 21);
+        font-size: 20px;
+    }
+
+    .tasktext{
+        margin-top: -22px;
+    }
+
+    .tasktexthead{
+        font-size: 100%;
+    }
+    
+    .tasktextcont{
+        font-size: 60%;
+    }
 }
 
 .tasktext{
@@ -107,15 +163,6 @@ body{
     height: 25px;
     width: 30px;
 }
-
-.tasktexthead{
-    font-size: 200%;
-}
-
-.tasktextcont{
-    font-size: 100%;
-}
-
 
 .flip-box {
     background-color: transparent;
