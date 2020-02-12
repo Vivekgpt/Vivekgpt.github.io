@@ -8,17 +8,17 @@ body{
     stroke-width: 10;
     stroke-dasharray: 600;
     transition: stroke-dashoffset 1s;
-  }
+}
   
-  .chart:hover .outer {
-      stroke-dashoffset: 600 !important;
-  }
+.chart:hover .outer {
+    stroke-dashoffset: 600 !important;
+}
   
-  .chart[data-percent='100'] .outer {
+.chart[data-percent='100'] .outer {
     animation: show100 7s;
-  }
+}
   
-  @keyframes show100 {
+@keyframes show100 {
     from {
       stroke-dashoffset: 595;
     }
@@ -26,7 +26,7 @@ body{
     to {
       stroke-dashoffset: 0;
     }
-  }
+}
 
 .name{
     white-space: nowrap;
@@ -35,11 +35,11 @@ body{
     overflow: hidden;
     width: 100%;
     animation: type 5s steps(60); 
-  }
+}
   
-  @keyframes type{ 
+@keyframes type{ 
     from { width: 0; } 
-  }
+}
 
 .profile:hover{
     transform: scale(1);
@@ -78,51 +78,6 @@ body{
 
 .tasktextcont{
     font-size: 100%;
-}
-
-@media (max-width: 480px) {
-    .task {
-        height: 85px;
-        width: 85px;
-        border: 10px solid;
-        border-color: white white rgb(90, 238, 21) rgb(90, 238, 21);
-        font-size: 20px;
-    }
-
-    .tasktext{
-        margin-top: -22px;
-    }
-
-    .tasktexthead{
-        font-size: 80%;
-    }
-    
-    .tasktextcont{
-        font-size: 50%;
-    }
-}
-
-
-@media (min-width: 481px) and (max-width: 720px) {
-    .task {
-        height: 85px;
-        width: 85px;
-        border: 10px solid;
-        border-color: white white rgb(90, 238, 21) rgb(90, 238, 21);
-        font-size: 20px;
-    }
-
-    .tasktext{
-        margin-top: -22px;
-    }
-
-    .tasktexthead{
-        font-size: 100%;
-    }
-    
-    .tasktextcont{
-        font-size: 60%;
-    }
 }
 
 .tasktext{
@@ -289,11 +244,6 @@ body{
     26% {transform: translate(-50%, -60px)}
   
 }
-  
-.gitcalbox{
-      border: 1px solid;
-}
-
 
 .shape {
     stroke-dasharray: 140 540;
@@ -303,21 +253,82 @@ body{
     stroke: #11ec0a;
     border-bottom: 6px solid black;
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-  }
-  .projtext, .proftext {
+}
+
+.projtext, .proftext {
     font-family: 'Bitter', serif;
     line-height: 32px;
     letter-spacing: 8px;
     font-weight: bold;
     top: -48px;
     position: relative;
-  }
-  .textbox:hover .shape {
+}
+
+.textbox:hover .shape {
     stroke-width: 2px;
     stroke-dashoffset: 0;
     stroke-dasharray: 760;
-  }
+}
 
-  #atag {
-      text-decoration: none;
-  }
+#atag {
+    text-decoration: none;
+    color: black;
+}
+
+#resume {
+    text-decoration: none;
+}
+
+
+@media (max-width: 480px) {
+    .task {
+        height: 85px;
+        width: 85px;
+        border: 10px solid;
+        border-color: white white rgb(90, 238, 21) rgb(90, 238, 21);
+        font-size: 20px;
+    }
+
+    .tasktext{
+        margin-top: -22px;
+    }
+
+    .tasktexthead{
+        font-size: 80%;
+    }
+    
+    .tasktextcont{
+        font-size: 50%;
+    }
+
+    .text {
+        font-size: 100%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 720px) {
+    .task {
+        height: 85px;
+        width: 85px;
+        border: 10px solid;
+        border-color: white white rgb(90, 238, 21) rgb(90, 238, 21);
+        font-size: 20px;
+    }
+
+    .tasktext{
+        margin-top: -22px;
+    }
+
+    .tasktexthead{
+        font-size: 100%;
+    }
+    
+    .tasktextcont{
+        font-size: 60%;
+    }
+    
+    .text {
+        font-size: 100%;
+    }
+}

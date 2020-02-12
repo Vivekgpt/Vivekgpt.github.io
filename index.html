@@ -32,12 +32,28 @@
 
   <h2 class="mt-4 name">Vivek Kumar</h2>
   <p class="font-weight-bold">Front-End Developer</p>
-  <div>
-    <img src="logos/Location.svg" title="Current Location" style="height: 2%; width:2%;"><span title="Current Location">Bangalore, India </span>
-    <a id="atag" href="tel:+91-895-1388-171" title="Phone No"><img src="logos/Contact.png" style="height: 2%; width: 2%; margin-left: 20px;"><span style="color: black;"> +91 895 1388 171</span></a>
-    <a id="atag" href="mailto: gptvivek123@gmail.com" title="Email Id"><img src="logos/Mail.png" style="height: 2%; width: 2%; margin-left: 20px;"><span style="color: black;"> gptvivek123@gmail.com</span></a>
+
+
+  <div class="row d-flex justify-content-around">
+      <p>
+        <a id="atag" title="Current Location" href="">
+          <span style="font-size: 25px;">&#128681;</span> Bangalore, India
+        </a>
+      </p>
+      <p>
+        <a id="atag" title="Phone No" href="tel:+91-895-1388-171">
+          <span style="font-size: 20px;">&#128222;</span> +91 895 1388 171
+        </a>
+      </p>
+      <p>
+        <a id="atag" title="Email Id" href="mailto: gptvivek123@gmail.com">
+          <span style="font-size: 25px;">&#128231;</span> gptvivek123@gmail.com
+        </a>
+      </p>
   </div>
-  <div class="mt-1">
+
+
+  <div class="">
     <a href="https://www.linkedin.com/in/vivek-kumar-b58580166/" title="LinkedIn"><img src="logos/linkedIn.png" class="m-4 profile"
         style="height: 3%; width: 3%; border-radius: 7px;"></a>
     <a href="https://github.com/Vivekgpt" title="Github"><img src="logos/github.svg" class="m-4 profile"
@@ -47,15 +63,17 @@
     <a href="https://www.hackerrank.com/gptvivek123?hr_r=1" title="HackerRank"><img src="logos/HackerRank.jpg" class="m-4 profile"
         style="height: 3%; width: 3%; border-radius: 10px;"></a>
   </div>
+
+  
   <div class="mt-3">
     <p>I am aspiring Front-End-Developer who is looking for a full-time job in order <br>to enhance my skills and gain
       more experience <br>and knowledge.</p>
-    <a href="logos/vivek kumar.pdf" title="View Resume" id="atag"><small>&#128203; View Full Resume</small></a>
+    <a href="logos/vivek kumar.pdf" title="View Resume" id="resume"><small> Click here to view Resume</small></a>
   </div>
 
 
   <div class="mt-5 bg-light">
-    <div class=" row d-flex justify-content-around">
+    <div class="row d-flex justify-content-around">
       <div class="container m-4">
         <img src="logos/HTML5.png" alt="..." class="image">
         <div class="middle">
@@ -88,7 +106,7 @@
       </div>
       </div>
   
-      <div class="d-flex justify-content-around">
+      <div class="row d-flex justify-content-around">
       <div class="container m-4">
         <img src="logos/ES6.png" alt="..." class="image">
         <div class="middle">
@@ -727,16 +745,32 @@
 
     <div class="bg-light mt-5 buttom">
       <div class=" d-flex justify-content-around">
-        <div class="task mt-5"><p class="text-info tasktext">1000+</p></div>
-        <div class="task mt-5"><p class="text-info tasktext">300+</p></div>
-        <div class="task mt-5"><p class="text-info tasktext">200+</p></div>
+
+        <div>
+          <div class="task mt-5"><p class="text-info tasktext">1000+</p></div>
+          <p class="tasktexthead mt-3 text-warning">Hours</p>
+          <p class="tasktextcont text-warning">of Front-End coding</p>
+        </div>
+
+        <div>
+          <div class="task mt-5"><p class="text-info tasktext">300+</p></div>
+          <p class="tasktexthead mt-3 text-info">HackerRank</p>
+          <p class="tasktextcont text-info">Problems</p>
+        </div>
+
+        <div>
+          <div class="task mt-5"><p class="text-info tasktext">200+</p></div>
+          <p class="tasktexthead mt-3 text-warning">Git</p>
+          <p class="tasktextcont text-warning">Commits</p>
+        </div>
       </div>
-      <div class=" d-flex justify-content-around">
+
+      <!-- <div class=" d-flex justify-content-around">
         <div class="ml-3 mr-sm-1 mr-md-5 mr-lg-1 text-warning">
           <p class="tasktexthead">Hours</p>
           <p class="tasktextcont">of Front-End coding</p>
         </div>
-        <div class="mr-5 ml-3 mr-sm-5 mr-md-5 mr-lg-5 text-info">
+        <div class="mr-5 ml-3 mr-sm-4 mr-md-5 mr-lg-5 text-info">
           <p class="tasktexthead">HackerRank</p>
           <p class="tasktextcont">Problems</p>
         </div>
@@ -744,14 +778,15 @@
           <p class="tasktexthead">Git</p>
           <p class="tasktextcont">Commits</p>
         </div>
-      </div>
+      </div> -->
+      
     </div>
 
              <!--  *********** GITHUB DESIGN ************ -->
 
 
     <center class="bg-light my-5 py-5" style="height: auto;">
-      <div class="rounded gitcalbox col-lg-9 col-md-12 col-sm-12">
+      <div class="rounded gitcalbox col-lg-9 col-md-9 col-sm-9">
         <div class="calendar">
           Here is the Git Status !!!
         </div>
